@@ -1,0 +1,165 @@
+
+@import "bootstrap";
+
+
+.font {
+   font-family: 'Raleway', sans-serif;
+}
+
+.cov { 
+	padding-bottom: 150px; 
+	background-size: cover;
+}
+
+.propic {
+	top: 200px;
+	bottom: 10%;
+	padding-bottom: 200px; 
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.navbar { 
+	margin : 0 !important;
+	background: rgba(51, 77, 153, 0.8);
+	color: #FFF;
+	padding-bottom: 20px;
+	padding-top: 20px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999; 
+}
+
+.size {
+	font-size: 200%;
+	color: white;
+}
+
+#mymodal1 {
+top:30%;
+right:50%;
+outline: none;
+overflow:hidden;
+}
+
+#mymodal2 {
+top:60%;
+right:0;
+outline: none;
+overflow:hidden;
+}
+
+#mymodal3 {
+top:60%;
+right:-50%;
+outline: none;
+overflow:hidden;
+}
+
+
+
+
+
+.a {
+  position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 6px;
+  left: 24px;
+  width: 350px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.a:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+
+.title {
+  position: absolute;
+  width: 400px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.a:hover .title {
+  top: 90px;
+}
+
+.b {
+  position: absolute;
+  width: 500px;
+  left:-50px;
+  top: 160px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.b a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.a:hover .b {
+  opacity: 1;
+}
+
+
+footer{
+  bottom: 0;
+  position: relative;
+  right: 0;
+  left: 0;
+  padding-top: 35px; 
+  padding-bottom: 35px; 
+}
+.footerHeader{
+    width:100%;
+    padding:1em;
+    background-color: #202020;
+    text-align:center;
+    color:white;
+}
+footer h3{
+    font-weight:lighter;
+}
+footer ul{
+    padding-left: 5px;
+    list-style: none;
+}
+footer p{
+    text-align : justify;
+    font-size : 12px;
+}
+.sm{
+    list-style:none;
+    overflow:auto;
+}
+
+.sm a img {
+    width:50px;
+    padding: 5px;
+    display: inline;
+}

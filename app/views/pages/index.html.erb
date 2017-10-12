@@ -1,0 +1,169 @@
+
+<div class="cov" style="background-image: url(<%= asset_path 'cover1.jpg' %>);">
+  <%= render 'layouts/navbar' %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-1 col-xs-1">
+      </div>
+      <div class="col-md-6 col-sm-10 col-xs-10 propic" style="background-image: url(<%= asset_path 'profile1.jpg', class: "img-responsive" %>)">
+      </div>
+      <div class="col-md-3 col-sm-1 col-xs-1">
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-md-2 col-sm-12 col-xs-12">
+      </div>       
+      <div class="col-md-8 col-sm-12 col-xs-12 text-center" >      
+        <h1 style="color: white; font-weight: bold; font-size: 500%; margin-top: 250px">Yogev Finegoz</h1>
+      </div>
+      <div class="col-md-2 col-sm-12 col-xs-12">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-2">
+      </div>
+      <div class="col-md-8 col-sm-2 col-xs-8 text-center">        
+        <h3 style="color: white">Web Developer</h3> 
+      </div> 
+      <div class="col-md-2 col-sm-2 col-xs-2">
+      </div>                 
+    </div>
+  </div>    
+</div>
+
+<div style="padding-bottom: 150px; padding-top: 50px; margin-top: 50px"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 style="font-size: 500%; font-weight: bold" id="about">About</h1>
+        <h1 style="margin-top: 100px">
+          Junior engineer with experience in the fields of software engineering, computer networks and cyber security.<br><br> Seeking a full time entry level position as a Ruby on Rails \ Full Stack developer.<br><br> A hard working individual, very motivated and enthusiastic about technology and eager to learn and progress. 
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>   
+
+<div style="padding-bottom: 100px; background-color: rgba(104,104,104,0.5)
+"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 style="font-size: 500%; font-weight: bold; margin-top: 50px; margin-bottom: 100px" id="portfolio">Portfolio</h1>
+      </div>
+      <div class="col-md-4 text-center a">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal1">
+          <p class="title">CatchApp</p>
+          <div class="overlay"></div>
+          <div class="button b"><a href="#"> CatchApp </a></div>
+          <%= image_tag("catchapp-portfolio.jpg", size: "350x200") %>        
+        </button>  
+        <div class="modal fade" id="mymodal1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title">CatchApp</h2>
+              </div>
+              <div class="modal-body">
+                <h5 style="font-weight: bold"><a href="https://catchappshare.herokuapp.com/eventsLink/1">CatchApp Platform Dependent Sharing App</a><br> 
+                CatchApp is a start up company originated in Santa Monica and offers a sports meeting service. IOS and Android users share a link with their friends for sports events and through my web app they are being transferred according to their device O.S using the Browser GEM to either a page that offers to download the compatible CatchApp app online or in case of viewing through a computer, transferred to a web designed page that generates the shared event for more details. The app is currently deployed using Heroku. The app utilizes the HTTPParty GEM and header Authentication to extract user and event stored data from the company’s RESTful JSON API.</h5>
+                <h5 style="font-weight: bold"><a href="http://wearecatchapp.herokuapp.com">CatchApp Full Functionality Web App</a><br> 
+                A full Rails 5 web app for CatchApp start up. The app includes several features like: Authentication using Devise gem, modifying user profiles, adding preferred sports activities, creating, commenting and liking events, full friendship mechanism and an ActiveAdmin to handle administrator control. The app uses AWS S3 bucket to store uploaded photos and is deployed using Heroku. The app utilizes geocoder and Gmaps4rails GEMs to present events on a map.</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="http://wearecatchapp.herokuapp.com", class="btn btn-primary" style="font-size: 150%" >View CatchApp Web</a>
+                <a href="https://catchappshare.herokuapp.com/eventsLink/1", class="btn btn-primary" style="font-size: 150%" >View CatchApp Share</a>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div> 
+      <div class="col-md-4 text-center a">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal2">
+          <p class="title">SocialNet</p>
+          <div class="overlay"></div>
+          <div class="button b"><a href="#"> SocialNet </a></div>
+          <%= image_tag("socialapp.jpg", size: "350x200") %>        
+        </button>  
+        <div class="modal fade" id="mymodal2">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title">Social Network</h2>
+              </div>
+              <div class="modal-body">
+                <h4>Connect with friends, view profiles, post and share your thoughts!</h4>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="http://socialnet1.herokuapp.com/", class="btn btn-primary" style="font-size: 150%" >View Social Network</a>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div> 
+      <div class="col-md-4 text-center a">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal3">
+          <p class="title">CarList</p>
+          <div class="overlay"></div>
+          <div class="button b"><a href="#"> CarList </a></div>
+          <%= image_tag("carlist-portfolio.png", size: "350x200") %>        
+        </button>   
+        <div class="modal fade" id="mymodal3">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title">CarList</h2>
+              </div>
+              <div class="modal-body">
+                <h4>View cars, compare specs and search our inventory!</h4>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="http://carlist.herokuapp.com/", class="btn btn-primary" style="font-size: 150%" >View CarList</a>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div>            
+    </div>
+  </div>
+</div> 
+
+<div style="padding-bottom: 200px"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 style="font-size: 500%; font-weight: bold; margin-top: 50px; margin-bottom: 100px" id="skills">Skills</h1>
+        <h1>Skills and languages include: Ruby, Git, HTML5, Ruby on Rails, SQL, CSS3, some JavaScript, Hebrew, Arabic.<br><br>
+        AWS and Heroku for production deployment and IRB, the rails console, ByeBug gem and browser development tools to review my work. </h1>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div style="padding-bottom: 50px; ; background-color: rgba(104,104,104,0.5)"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 style="font-size: 500%; font-weight: bold; margin-top: 50px; margin-bottom: 50px" id="contact">Contact</h1>
+        <h1 style="font-size: 250%; font-weight: bold">Email Me At:</h1><br>
+        <a href="mailto:finegoz@gmail.com"><h1 style="font-size: 300%; font-weight: bold; color: white">Finegoz@gmail.com</h1><br></a>
+        <h1 style="font-size: 250%; font-weight: bold">Send Me a Message on LinkedIn:</h1><br>
+        <a href="https://www.linkedin.com/in/yogev-finegoz-b0071095/"><h1 style="font-size: 300%; font-weight: bold; color: white">LinkedIn - Yogev Finegoz</h1></a>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<%= render 'layouts/footer' %>
+
+
+
+
+
+
+   
+
+
