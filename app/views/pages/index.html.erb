@@ -1,11 +1,25 @@
+<!-- navbar fade in/out -->
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 650) {
+                $('#navbar').fadeIn(500);
+            } else {
+                $('#navbar').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
 
-<div class="cov" style="background-image: url(<%= asset_path 'cover1.jpg' %>);">
-  <%= render 'layouts/navbar' %>
+<div class="cov" style="background-image: url(<%= asset_path 'gif5.gif' %>);">
+  <div id="navbar"><%= render 'layouts/navbar' %></div>
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-1 col-xs-1">
       </div>
-      <div class="col-md-6 col-sm-10 col-xs-10 propic" style="background-image: url(<%= asset_path 'profile1.jpg', class: "img-responsive" %>)">
+      <div class="col-md-6 col-sm-10 col-xs-10">
       </div>
       <div class="col-md-3 col-sm-1 col-xs-1">
       </div>
@@ -14,7 +28,7 @@
       <div class="col-md-2 col-sm-12 col-xs-12">
       </div>       
       <div class="col-md-8 col-sm-12 col-xs-12 text-center" >      
-        <h1 style="color: white; font-weight: bold; font-size: 500%; margin-top: 250px">Yogev Finegoz</h1>
+        <h1 style="color: white; font-weight: bold; font-size: 1000%; margin-top: 250px">Yogev Finegoz</h1>
       </div>
       <div class="col-md-2 col-sm-12 col-xs-12">
       </div>
@@ -23,7 +37,7 @@
       <div class="col-md-2 col-sm-2 col-xs-2">
       </div>
       <div class="col-md-8 col-sm-2 col-xs-8 text-center">        
-        <h3 style="color: white">Web Developer</h3> 
+        <h3 style="color: white; font-size: 300%">Web Developer</h3> 
       </div> 
       <div class="col-md-2 col-sm-2 col-xs-2">
       </div>                 
@@ -31,10 +45,11 @@
   </div>    
 </div>
 
+
 <div style="padding-bottom: 150px; padding-top: 50px; margin-top: 50px"> 
-  <div class="container">
+  <div class="container"> 
     <div class="row">
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center propic" style="background-image: url(<%= asset_path 'profile1.jpg', class: "img-responsive" %>)">
         <h1 style="font-size: 500%; font-weight: bold" id="about">About</h1>
         <h1 style="margin-top: 100px">
           Junior engineer with experience in the fields of software engineering, computer networks and cyber security.<br><br> Seeking a full time entry level position as a Ruby on Rails \ Full Stack developer.<br><br> A hard working individual, very motivated and enthusiastic about technology and eager to learn and progress. 
