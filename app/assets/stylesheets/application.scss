@@ -86,15 +86,15 @@ overflow:hidden;
   position: absolute;
   top: 0px;
   left: 15px;
-  width: 350px;
-  height: 200px;
+  width: 380px;
+  height: 300px;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease;
 }
 
 .a:hover .overlay {
   display: block;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, 1);
 }
 
 
@@ -109,11 +109,13 @@ overflow:hidden;
   text-transform: uppercase;
   color: white;
   z-index: 1;
+  opacity: 0;
   transition: top .5s ease;
 }
 
 .a:hover .title {
   top: 90px;
+  opacity: 1;
 }
 
 .b {
@@ -179,6 +181,7 @@ footer p{
 
 
 .btn1 {
+  margin-top: 30px;
   letter-spacing: 1px;
   text-decoration: none;
   background: none;
@@ -254,14 +257,13 @@ footer p{
 
 body {
   background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
-}
-
-
-body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  right: 0;
+  left: 0;
 }
+
 
 p {
   margin: 0 0 10px 0;
