@@ -16,3 +16,8 @@
 //= require_tree .
 
 
+$("#skill").flip({
+  axis: 'x',
+  trigger: 'hover',
+  reverse: true
+});

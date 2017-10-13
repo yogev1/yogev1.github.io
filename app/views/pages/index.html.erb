@@ -1,7 +1,6 @@
 <!-- navbar fade in/out -->
 <script type="text/javascript">
-(function($) { 
-         
+(function($) {         
     $(document).ready(function(){                    
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > screen.height) {
@@ -12,6 +11,14 @@
         });
     });
 })(jQuery);
+</script>
+
+<script type="text/javascript">                    
+    $("#skill").flip({
+      axis: 'x',
+      trigger: 'hover',
+      reverse: true
+          });
 </script>
 
 <div class="cov" style="background-image: url(<%= asset_path 'gif5.gif' %>);">
@@ -39,7 +46,7 @@
     <div class="row">     
       </div> 
       <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-        <a href="#about"class="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">View My Work</a>
+        <a href="#about"class="btn1 btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">View My Work</a>
       </div>                 
     </div>
   </div>    
@@ -147,8 +154,8 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <a href="http://wearecatchapp.herokuapp.com", class="btn btn-primary" style="font-size: 150%" >View CatchApp Web</a>
-                <a href="https://catchappshare.herokuapp.com/eventsLink/1", class="btn btn-primary" style="font-size: 150%" >View CatchApp Share</a>
+                <a href="http://wearecatchapp.herokuapp.com", class="btn btn-primary" style="font-size: 100%" >View CatchApp Web</a>
+                <a href="https://catchappshare.herokuapp.com/eventsLink/1", class="btn btn-primary" style="font-size: 100%" >View CatchApp Share</a>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
@@ -212,8 +219,36 @@
       <div class="col-md-12 text-center">
         <h1 style="font-size: 600%; font-weight: bold; margin-top: 50px" id="skills">Skills</h1>
         <p><span class="glyphicon glyphicon-minus" style="font-size: 1000%"></span></p>
-        <h1>Skills and languages include: Ruby, Git, HTML5, Ruby on Rails, SQL, CSS3, some JavaScript, Hebrew, Arabic.<br><br>
-        AWS and Heroku for production deployment and IRB, the rails console, ByeBug gem and browser development tools to review my work. </h1>
+        <div class="col-md-1 col-sm-3 col-sm-12">
+        </div>        
+        <div class="col-md-1 col-sm-3 col-sm-12" id="skill">
+          <h1>Ruby</h1>
+        </div>
+        <div class="col-md-1 col-sm-3 col-sm-12">
+          <h1>Git</h1>
+        </div>
+        <div class="col-md-1 col-sm-3 col-sm-12">
+          <h1>HTML5</h1>
+        </div>
+        <div class="col-md-4 col-sm-3 col-sm-12">
+          <h1>Ruby on Rails</h1>
+        </div>
+        <div class="col-md-1 col-sm-3 col-sm-12">
+          <h1>SQL</h1>
+        </div>
+        <div class="col-md-1 col-sm-3 col-sm-12">
+          <h1>CSS3</h1>
+        </div>
+        <div class="col-md-1 col-sm-3 col-sm-12">
+          <h1>JavaScript</h1>
+        </div>
+        <div class="col-md-1 col-sm-3 col-sm-12">
+        </div>
+        <div class="col-md-12 col-sm-3 col-sm-12">
+          <h1>
+            AWS and Heroku for production deployment and IRB, the rails console, ByeBug gem and browser development tools to review my work. 
+          </h1>
+        </div>  
       </div>
     </div>
   </div>
@@ -238,6 +273,14 @@
 
 
 
-   
+  <div id="skill"> 
+  <div class="front"> 
+    Front content
+  </div> 
+  <div class="back">
+    Back content
+  </div> 
+</div>
+ 
 
 
