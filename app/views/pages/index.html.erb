@@ -15,15 +15,7 @@
 
 <div class="cov" style="background-image: url(<%= asset_path 'gif5.gif' %>);">
   <div id="navbar"><%= render 'layouts/navbar' %></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-1 col-xs-1">
-      </div>
-      <div class="col-md-6 col-sm-10 col-xs-10">
-      </div>
-      <div class="col-md-3 col-sm-1 col-xs-1">
-      </div>
-    </div>  
+  <div class="container"> 
     <div class="row">
       <div class="col-md-2 col-sm-12 col-xs-12">
       </div>       
@@ -43,8 +35,6 @@
     </div>
   </div>    
 </div>
-
-
 <div style="margin-bottom: 100px"> 
   <div class="container"> 
     <div class="row">
@@ -52,64 +42,59 @@
         <h1 style="font-size: 600%; font-weight: bold;" id="about">About</h1>
         <p align="center"><span class="hr1"></span></p>
       </div>   
-      <div class="propic col-md-12">
-<div class="img-clip-block">
-  <div class="img-clip-row">
-    <div class="img-clip-wrap img-profile-wrap">
-    </div>
-  </div>
-
-  <div class="img-clip-row">
-    <a href="#" class="img-clip-wrap">
-      <div class="overlay1">
-        <div class="overlay1-content">
-          Ambitious
+      <div class="propic col-md-12 col-xs-12 col-sm-12">
+        <div class="img-clip-row">
+          <div class="img-clip-wrap img-profile-wrap">
+          </div>
         </div>
+        <div class="img-clip-row">
+          <a href="#" class="img-clip-wrap">
+            <div class="overlay1">
+              <div class="overlay1-content">
+                Ambitious
+              </div>
+            </div>
+          </a>
+          <a href="#" class="img-clip-wrap">
+            <div class="overlay1">         
+              <div class="overlay1-content">
+                Hard Working
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="img-clip-row">
+          <a href="#" class="img-clip-wrap polygon-clip-rhombus">
+            <div class="overlay1">
+              <div class="overlay1-content">
+                Goal Oriented
+              </div>            
+            </div>
+          </a>
+        </div>
+        <svg class="clip-svg">
+          <defs>
+            <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+              <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+            </clipPath>
+          </defs>   
+        </svg>
       </div>
-    </a>
-
-    <a href="#" class="img-clip-wrap">
-      <div class="overlay1">         
-        <div class="overlay1-content">
-          Hard Working</div>
-      </div>
-    </a>
-  </div>
-
-  <div class="img-clip-row">
-    <a href="#" class="img-clip-wrap polygon-clip-rhombus">
-      <div class="overlay1">
-        <div class="overlay1-content">
-          Goal Oriented</div>            
-      </div>
-    </a>
-  </div>
-</div> <!-- /img-clip-block -->
-
-<svg class="clip-svg">
-  <defs>
-    <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
-      <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
-    </clipPath>
-  </defs>   
-</svg>
-
-
-
-      </div>
-      <div class="col-md-4 text-center" style="margin-top: 400px">
+    </div>
+    <div class="row" style="margin-top: 400px">  
+      <div class="col-md-4 text-center">
         <p><span class="glyphicon glyphicon-user" style="font-size: 1000%"></span></p>
         <h1 id="head">Me</h1>
         <h2>
           Junior engineer with experience in the fields of software engineering, computer networks and cyber security.  
         </h2>
       </div>
-      <div class="col-md-4 text-center" style="margin-top: 400px">
+      <div class="col-md-4 text-center">
         <p><span class="glyphicon glyphicon-briefcase" style="font-size: 1000%"></span></p>        
         <h1 id="head">What I'm Looking</h1>
         <h2>Seeking a full time entry level position as a Ruby on Rails \ Full Stack developer.</h2>        
       </div>
-      <div class="col-md-4 text-center" style="margin-top: 400px">
+      <div class="col-md-4 text-center">
         <p><span class="glyphicon glyphicon-education" style="font-size: 1000%"></span></p>
         <h1 id="head">What I'm About</h1>
         <h2>I'm A hard working individual, very motivated and enthusiastic about technology and eager to learn and progress.</h2>        
@@ -117,7 +102,6 @@
     </div>
   </div>
 </div>   
-
 <div style="padding-bottom: 100px; background-color: #e6e6e6"> 
   <div class="container">
     <div class="row">
@@ -207,7 +191,6 @@
     </div>
   </div>
 </div> 
-
 <div style="padding-bottom: 100px"> 
   <div class="container">
     <div class="row">
@@ -262,7 +245,6 @@
     </div>
   </div>
 </div> 
-
 <div style="padding-bottom: 50px; ; background-color: #4d4d4d"> 
   <div class="container">
     <div class="row">
@@ -277,6 +259,5 @@
     </div>
   </div>
 </div>  
-
 <%= render 'layouts/footer' %>
 
