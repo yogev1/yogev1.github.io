@@ -51,22 +51,22 @@
 }
 
 #mymodal1 {
-top:30%;
-right:50%;
+top:20%;
+right:0;
 outline: none;
 overflow:hidden;
 }
 
 #mymodal2 {
-top:30%;
+top:50%;
 right:0;
 outline: none;
 overflow:hidden;
 }
 
 #mymodal3 {
-top:30%;
-right:-50%;
+top:50%;
+right:0;
 outline: none;
 overflow:hidden;
 }
@@ -113,12 +113,13 @@ overflow:hidden;
 
 .overlay {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 22px;
   width: 380px;
   height: 300px;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease;
+  overflow:inherit;
 }
 
 .a:hover .overlay {

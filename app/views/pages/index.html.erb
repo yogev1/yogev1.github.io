@@ -47,14 +47,14 @@
           </div>
         </div>
         <div class="img-clip-row">
-          <a href="#" class="img-clip-wrap">
+          <a class="img-clip-wrap">
             <div class="overlay1">
               <div class="overlay1-content">
                 Ambitious
               </div>
             </div>
           </a>
-          <a href="#" class="img-clip-wrap">
+          <a class="img-clip-wrap">
             <div class="overlay1">         
               <div class="overlay1-content">
                 Hard Working
@@ -63,7 +63,7 @@
           </a>
         </div>
         <div class="img-clip-row">
-          <a href="#" class="img-clip-wrap polygon-clip-rhombus">
+          <a class="img-clip-wrap polygon-clip-rhombus">
             <div class="overlay1">
               <div class="overlay1-content">
                 Goal Oriented
@@ -116,9 +116,9 @@
           <div class="button b"><a href="http://wearecatchapp.herokuapp.com"> CatchApp </a></div>
           <%= image_tag("catchapp-portfolio.jpg", size: "380x300") %>        
         </div>  
-        <div class="modal fade" id="mymodal1">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
+        <div class="modal" id="mymodal1">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="margin: 0 auto">
               <div class="modal-header">
                 <h2 class="modal-title">CatchApp</h2>
               </div>
@@ -145,8 +145,8 @@
           <div class="button b"><a href="http://socialnet1.herokuapp.com"> SocialNet </a></div>
           <%= image_tag("socialapp.jpg", size: "380x300") %>        
         </div>  
-        <div class="modal fade" id="mymodal2">
-          <div class="modal-dialog" role="document">
+        <div class="modal" id="mymodal2">
+          <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h2 class="modal-title">Social Network</h2>
@@ -170,8 +170,8 @@
           <div class="button b"><a href="http://carlist.herokuapp.com">CarList</a></div>
           <%= image_tag("carlist-icon3.jpg", size: "380x300") %>        
         </div>   
-        <div class="modal fade" id="mymodal3">
-          <div class="modal-dialog" role="document">
+        <div class="modal" id="mymodal3">
+          <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h2 class="modal-title">CarList</h2>
@@ -258,4 +258,7 @@
   </div>
 </div>  
 <%= render 'layouts/footer' %>
+
+
+
 
