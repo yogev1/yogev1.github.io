@@ -23,7 +23,7 @@
 }
 
 .propic {
-	top: 50px;  
+	top: 0px;  
 	bottom: 10%;
   height: 350px;
   width: 300px;
@@ -114,7 +114,7 @@ overflow:hidden;
 .overlay {
   position: absolute;
   top: 0px;
-  left: 15px;
+  left: 22px;
   width: 380px;
   height: 300px;
   background: rgba(0, 0, 0, 0);
@@ -310,14 +310,8 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  right: 0;
-  left: 0;
 }
 
-
-p {
-  margin: 0 0 10px 0;
-}
 
 .clip-svg {
   width: 0;
