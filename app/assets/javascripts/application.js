@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree 
 
-var http = require("http");
+
 setInterval(function() {
     http.get("http://yogevfine.herokuapp.com");
 }, 50000); 
