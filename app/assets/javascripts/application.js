@@ -35,6 +35,7 @@ $(document).scroll(function() {
 
 
 $(document).scroll(function() {
+  $('.divshow2').hide();
   var y = $(this).scrollTop();
   if (y > 1500) {
     $('.divshow').show();
@@ -42,4 +43,6 @@ $(document).scroll(function() {
     $('.divshow').hide();
   }
 });
+
+
 
