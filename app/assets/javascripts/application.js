@@ -19,3 +19,18 @@
 setInterval(function() {
     http.get("http://yogevfine.herokuapp.com");
 }, 50000); 
+
+
+<!-- fade in/out -->
+
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 550) {
+    $('.divshow').hide();
+  } else {
+    $('.divshow').show();
+  }
+});
+
+

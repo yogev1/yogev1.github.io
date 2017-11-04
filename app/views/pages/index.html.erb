@@ -1,155 +1,114 @@
-<!-- navbar fade in/out -->
-<script type="text/javascript">
-(function($) {         
-    $(document).ready(function(){                    
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > screen.height) {
-                $('#navbar').fadeIn(500);
-            } else {
-                $('#navbar').hide();
-            }
-        });
-    });
-})(jQuery);
-</script>
 
-<div class="cov" style="background-image: url(<%= asset_path 'gif5.gif' %>);">
-  <div id="navbar"><%= render 'layouts/navbar' %></div>
+<div class="cov" style="background-image: url(<%= asset_path 'cover1.jpeg' %>); position: fixed; width: 100%; min-height: 100vw; background-size:contain">
   <div class="container"> 
-    <div class="row">
-      <div class="col-md-2 col-sm-12 col-xs-12">
+    <div class="row divshow">
+      <div class="col-md-4 col-sm-12 col-xs-12">
       </div>       
-      <div class="col-md-12 col-sm-12 col-xs-12 text-center" >      
+      <div class="col-md-8 col-sm-12 col-xs-12 text-center">      
         <h1 style="color: white; font-weight: bold; font-size: 500%; margin-top: 250px">Hey, I'm Yogev Finegoz.</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12 text-center">        
-        <h3 style="color: white; font-size: 500%">I'm a Full Stack Web Developer.</h3>
+    <div class="row divshow">
+      <div class="col-md-4 col-sm-12 col-xs-12"></div>
+      <div class="col-md-8 col-sm-12 col-xs-12 text-center">        
+        <h3 style="color: white; font-size: 500%">I'm a Full Stack Engineer.</h3>
       </div>
     </div>
-    <div class="row">      
-      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-        <a href="#about"class="btn1 btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">View My Work</a>
+    <div class="row divshow"> 
+      <div class="col-md-4 col-sm-12 col-xs-12"></div>   
+      <div class="col-md-8 col-sm-12 col-xs-12 text-center">
+        <a href="#about"class="btn1 btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">About</a>
       </div>                 
     </div>
   </div>    
 </div>
-  <div class="container" style="margin-bottom: 50px"> 
-    <div class="row">
-      <div class="col-md-12 text-center" style="margin-top: 50px">
-        <h1 style="font-size: 600%; font-weight: bold;" id="about">About</h1>
-        <p align="center"><span class="hr1"></span></p>
-      </div>   
-      <div class="col-md-12 col-xs-12 col-sm-12">
-        <div class="img-clip-row">
-          <div class="img-clip-wrap img-profile-wrap propic">
-          </div>
-        </div>
-        <div class="img-clip-row">
-          <a class="img-clip-wrap">
-            <div class="overlay1">
-              <div class="overlay1-content">
-                Ambitious
-              </div>
-            </div>
-          </a>
-          <a class="img-clip-wrap">
-            <div class="overlay1">         
-              <div class="overlay1-content">
-                Hard Working
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="img-clip-row">
-          <a class="img-clip-wrap polygon-clip-rhombus">
-            <div class="overlay1">
-              <div class="overlay1-content">
-                Goal Oriented
-              </div>            
-            </div>
-          </a>
-        </div>
-        <svg class="clip-svg">
-          <defs>
-            <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
-              <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
-            </clipPath>
-          </defs>   
-        </svg>
+<div style="position: absolute; top: 100%; right: 0; left: 0; background-color: white; padding-bottom: 50px; padding-top: 20px; background-image: url(<%= asset_path 'about-back.jpeg' %>); width: 100%; min-height: 110vw; background-size: contain; background-repeat: no-repeat;
+  ">
+  <div class="container"> 
+    <div class="row" id="othdiv">
+      <div class="col-md-12 text-center" style="margin-top: 50px; padding-bottom: 40px">
+        <h1 style="font-size: 600%; font-weight: bold;" id="about" class="font-col-light">About</h1>
+        <p align="center"><span class="hr3"></span></p>
+      </div>
+    </div>
+    <div class="row text-center" style="padding-bottom: 80px">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h1 class="font-col-light" style="font-size: 400%">Raised On The Beaches Of The Mediterranean</h1>
       </div>
     </div>
   </div>
-  <div class="container" style="margin-bottom: 50px">  
+  <div class="container font" style="margin-bottom: 50px; color:#F0FFFF">  
     <div class="row">  
       <div class="col-md-4 text-center">
-        <p><span class="glyphicon glyphicon-user" style="font-size: 1000%"></span></p>
-        <h1 id="head">Me</h1>
-        <h2>
-          Junior engineer with experience in the fields of software engineering, computer networks and cyber security.  
-        </h2>
+        <p><span class="glyphicon glyphicon-user font-col-light" style="font-size: 1000%"></span></p><br><br>
+        <h1 id="head" class="font-col-light"></h1><br>
+        <h1 class="font-col-light">
+          Ambitious Junior engineer with experience in the fields of software engineering, computer networks and cyber security  
+        </h1>
       </div>
       <div class="col-md-4 text-center">
-        <p><span class="glyphicon glyphicon-briefcase" style="font-size: 1000%"></span></p>        
-        <h1 id="head">What I'm Looking</h1>
-        <h2>Seeking a full time entry level position as a Ruby on Rails \ Full Stack developer.</h2>        
+        <p><span class="glyphicon glyphicon-briefcase font-col-light" style="font-size: 1000%"></span></p><br><br> 
+        <h1 id="head" class="font-col-light"></h1><br>
+        <h1 class="font-col-light">Goal Oriented individual Seeking a full time position as a Full Stack Engineer</h1>        
       </div>
       <div class="col-md-4 text-center">
-        <p><span class="glyphicon glyphicon-education" style="font-size: 1000%"></span></p>
-        <h1 id="head">What I'm About</h1>
-        <h2>I'm A hard working individual, very motivated and enthusiastic about technology and eager to learn and progress.</h2>        
+        <p><span class="glyphicon glyphicon-education font-col-light" style="font-size: 1000%"></span></p><br><br>
+        <h1 id="head" class="font-col-light"></h1><br>
+        <h1 class="font-col-light">Hard working, motivated and enthusiastic about technology and eager to learn and progress.</h1>        
       </div>      
     </div>
   </div>
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-xs-12 col-sm-12 text-center">
-          <h1 style="font-size: 600%; font-weight: bold; margin-top: 50px" id="portfolio">Portfolio</h1>
-          <p align="center"><span class="hr1"></span></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-xs-12 col-sm-12 text-center a">
-          <div data-toggle="modal" data-target="#mymodal1">
-            <p class="title">App</p>
-            <h3 class="title2">Click the banner for more details<h3>
-            <div class="overlay"></div>
-            <div class="button b"><a href="http://wearecatchapp.herokuapp.com">App </a></div>
-            <%= image_tag("app-portfolio.jpg", class: "img-responsive", style: "min-height: 250px") %>        
-          </div>  
-          
-        </div> 
-        <div class="col-md-4 col-xs-12 col-sm-12 text-center a">
-          <div data-toggle="modal" data-target="#mymodal2">
-            <p class="title">SocialNet</p>
-            <h3 class="title2">Click the banner for more details<h3>
-            <div class="overlay"></div>
-            <div class="button b"><a href="http://socialnet1.herokuapp.com"> SocialNet </a></div>
-            <%= image_tag("socialapp.jpg", class: "img-responsive", style: "min-height: 250px") %>        
-          </div>  
-        </div> 
-        <div class="col-md-4 col-xs-12 col-sm-12 text-center a">
-          <div data-toggle="modal" data-target="#mymodal3">
-            <p class="title">CarList</p>
-            <h3 class="title2">Click the banner for more details<h3>
-            <div class="overlay"></div>
-            <div class="button b"><a href="http://carlist.herokuapp.com">CarList</a></div>
-            <%= image_tag("carlist-portfolio3.jpg", class: "img-responsive", style: "min-height: 250px") %>        
-          </div>   
-        </div>            
+</div> 
+<div style="position: absolute; top: 220%; padding-top: 50px; background-color: #ECF1EF; width: 100%; min-height: 90vw; background-size: cover"> 
+  <div class="container">
+    <div class="row" style="margin-bottom: 100px">
+      <div class="col-md-12 col-xs-12 col-sm-12 text-center">
+        <h1 style="font-size: 800%; font-weight: bold; margin-top: 50px" id="portfolio">Portfolio</h1>
+        <p align="center"><span class="hr1"></span></p>
       </div>
     </div>
-  </div>  
-<div style="padding-bottom: 100px"> 
+    <div class="row">
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal1">
+          <p class="title">Sports Meet-App</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("sports2.jpeg", class: "img-responsive", style: "height: 375px;") %>
+        </div>
+      </div>   
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal2">
+          <p class="title">SocialNet</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("social.png", class: "img-responsive", style: "height: 375px") %> 
+        </div>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal3">
+          <p class="title">CarList</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("car.jpeg", class: "img-responsive", style: "height: 375px") %> 
+        </div> 
+      </div>             
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal4">
+          <p class="title">D.M.Viz</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("dmv2.jpeg", class: "img-responsive", style: "height: 375px") %> 
+        </div>
+      </div>
+    </div>              
+  </div>          
+</div>        
+<div style="position: absolute; top: 440%; background-color: white; background-image: url(<%= asset_path 'skills.jpeg' %>); width: 100%; min-height: 70vw; background-size: contain; background-repeat: no-repeat;"> 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12 text-center"><h1 style="font-size: 600%; font-weight: bold; margin-top: 50px" id="skills">Skills</h1></div>
+      <div class="col-md-12 col-sm-12 col-xs-12 text-center"><h1 style="font-size: 600%; font-weight: bold; margin-top: 50px" id="skills" class="font-col-light">Skills</h1></div>
       <div class="col-md-12" align="center">
-        <span class="hr1"></span>
+        <span class="hr3"></span>
       </div>  
-      <div class="col-md-12 text-center panel panel-default pan">        
+      <div class="col-md-12 text-center panel panel-default pan" style="background-color: #EBECE4">        
         <div class="row">  
           <div class="col-md-2 col-sm-4 col-xs-6">
             <%= image_tag("ruby-icon.png", size: "60x60") %>
@@ -196,23 +155,22 @@
     </div>
   </div>
 </div> 
-<div style="padding-bottom: 50px; ; background-color: #4d4d4d"> 
+<div style="padding-bottom: 70px; background-color: #4d4d4d; position: absolute; top: 550%; right:0; left:0; background-color: white"> 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 style="font-size: 300%; font-weight: bold; margin-top: 50px; color: white" id="contact">Contact</h1>
-        <p align="center"><span class="hr2"></span></p>
-        <h1 style="font-size: 150%; font-weight: bold; color:#bfbfbf">Email Me At:</h1><br>
-        <a href="mailto:finegoz@gmail.com"><h1 style="font-size: 200%; font-weight: bold; color: white">Finegoz@gmail.com</h1><br></a>
-        <h1 style="font-size: 150%; font-weight: bold; color:#bfbfbf">Send Me a Message on LinkedIn:</h1><br>
-        <a href="https://www.linkedin.com/in/yogev-finegoz-b0071095/"><h1 style="font-size: 200%; font-weight: bold; color: white">LinkedIn - Yogev Finegoz</h1></a>
+      <div class="col-md-12 text-center" style="margin-bottom: 20px">
+        <h1 style="font-size: 400%; font-weight: bold; margin-top: 30px; color: black" id="contact">Contact</h1>
+        <p align="center"><span class="hr4"></span></p>
+        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Email Me At:</h1><br>
+        <a href="mailto:finegoz@gmail.com"><h1 style="font-size: 300%; font-weight: bold; color: black">Finegoz@gmail.com</h1><br></a>
+        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Send Me a Message on LinkedIn:</h1><br>
+        <a href="https://www.linkedin.com/in/yogev-finegoz-b0071095/"><h1 style="font-size: 300%; font-weight: bold; color: black">LinkedIn - Yogev Finegoz</h1></a>
       </div>
     </div>
   </div>
 </div>  
-<%= render 'layouts/footer' %>
 
-<div class="modal" id="mymodal1">
+<div class="modal font2" id="mymodal1">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -220,9 +178,9 @@
       </div>
       <div class="modal-body">
         <h5 style="font-weight: bold"><a href="#">App Platform Dependent Sharing App</a><br> 
-        Inspired by CatchApp start up company of Santa Monica that provides a sports meeting service. IOS and Android users share a link with their friends for sports events and through my web app they are being transferred according to their device O.S using the Browser GEM to either a page that offers to download the compatible App online or in case of viewing through a computer, transferred to a web designed page that generates the shared event for more details. The app is currently deployed using Heroku. The app utilizes the HTTPParty GEM and header Authentication to extract user and event stored data from the company’s RESTful JSON API.</h5>
+        Inspired by a start up company from Santa Monica that provides a sports meeting service. IOS and Android users share a link with their friends for sports events and through my web app they are being transferred according to their device O.S using the Browser GEM to either a page that offers to download the compatible App online or in case of viewing through a computer, transferred to a web designed page that generates the shared event for more details. The app is currently deployed using Heroku. The app utilizes the HTTPParty GEM and header Authentication to extract user and event stored data from the company’s RESTful JSON API.</h5>
         <h5 style="font-weight: bold"><a href="http://wearecatchapp.herokuapp.com">Full Functionality Web App</a><br> 
-      Inspired by CatchApp start up company of Santa Monica. A full Rails 5 web app. The app includes several features like: Authentication using Devise gem, modifying user profiles, adding preferred sports activities, creating, commenting and liking events, full friendship mechanism and an ActiveAdmin to handle administrator control. The app uses AWS S3 bucket to store uploaded photos and is deployed using Heroku. The app utilizes geocoder and Gmaps4rails GEMs to present events on a map.</h5>
+      Inspired by a start up company from Santa Monica. A full Rails 5 web app. The app includes several features like: Authentication using Devise gem, modifying user profiles, adding preferred sports activities, creating, commenting and liking events, full friendship mechanism and an ActiveAdmin to handle administrator control. The app uses AWS S3 bucket to store uploaded photos and is deployed using Heroku. The app utilizes geocoder and Gmaps4rails GEMs to present events on a map.</h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-size: 150%; padding: 6px 50px">Close</button>
@@ -231,8 +189,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-<div class="modal" id="mymodal2">
+<div class="modal font2" id="mymodal2">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -248,8 +205,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-<div class="modal" id="mymodal3">
+<div class="modal font2" id="mymodal3">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -265,4 +221,19 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
+<div class="modal font2" id="mymodal4">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">DMViz</h2>
+      </div>
+      <div class="modal-body">
+        <h4>Check Your Knowledge of the CA traffic law with this interactive React.JS quiz</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-size: 150%; padding: 6px 30px">Close</button>
+        <a href="http://dmv-quiz.herokuapp.com/", class="btn btn-primary" style="font-size: 150%; padding: 6px 30px">View DMViz</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
