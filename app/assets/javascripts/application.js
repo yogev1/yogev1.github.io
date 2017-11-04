@@ -26,11 +26,20 @@ setInterval(function() {
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 550) {
-    $('.divshow').hide();
+  if (y > 700) {
+    $('.divhide').hide();
   } else {
-    $('.divshow').show();
+    $('.divhide').show();
   }
 });
 
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 1500) {
+    $('.divshow').show();
+  } else {
+    $('.divshow').hide();
+  }
+});
 
