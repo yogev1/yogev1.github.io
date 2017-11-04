@@ -35,9 +35,18 @@ $(document).scroll(function() {
 
 
 $(document).scroll(function() {
-  $('.divshow2').hide();
   var y = $(this).scrollTop();
-  if (y > 1500) {
+  if (y > 700 && y < 1900) {
+    $('.divshow2').show();
+  } else {
+    $('.divshow2').hide();
+  }
+});
+
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 1900) {
     $('.divshow').show();
   } else {
     $('.divshow').hide();
