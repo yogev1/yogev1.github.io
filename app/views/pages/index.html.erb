@@ -5,16 +5,11 @@
       <div class="col-md-7 col-sm-8 col-xs-8 text-center" style="opacity: 0.7">
         <a href="#about"class="btn1 btn-outlined btn-theme btn-lg" data-wow-delay="0.7s" style="font-size:250%">About</a>
       </div>                 
-    </div>
-    <div class="row divhide hidden-md hidden-lg" style="margin-top: 200px">   
-      <div class="col-md-7 col-sm-8 col-xs-8 text-center" style="opacity: 0.7">
-        <a href="#about"class="btn1 btn-outlined btn-theme btn-lg" data-wow-delay="0.7s" style="font-size:250%">About</a>
-      </div>                 
-    </div>    
+    </div>   
   </div>     
 </div>
 
-<div style="position: absolute; top: 100%; right: 0; left: 0; background-color: white; padding-bottom: 50px; padding-top: 20px; background-image: url(<%= asset_path 'about-back.jpeg' %>); width: 100%; min-height: 110vw; background-size: contain; background-repeat: no-repeat;">
+<div class="hidden-xs hidden-sm" style="position: absolute; top: 100%; right: 0; left: 0; background-color: white; padding-bottom: 50px; padding-top: 20px; background-image: url(<%= asset_path 'about-back.jpeg' %>); width: 100%; min-height: 110vw; background-size: contain; background-repeat: no-repeat;">
   <div class="container"> 
     <div class="row" id="othdiv">
       <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin-top: 50px; padding-bottom: 40px">
@@ -50,11 +45,49 @@
     </div>
   </div>    
 </div>
+
+<div class="hidden-md hidden-lg" style="position: absolute; top: 50%; right: 0; left: 0; background-color: white; padding-bottom: 50px; padding-top: 20px; background-image: url(<%= asset_path 'about-back.jpeg' %>); width: 100%; min-height: 110vw; background-size: contain; background-repeat: no-repeat;">
+  <div class="container"> 
+    <div class="row" id="othdiv">
+      <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin-top: 50px; padding-bottom: 40px">
+        <h1 style="font-size: 300%; font-weight: bold;" id="about" class="font-col-light">About</h1>
+        <p align="center"><span class="hr3"></span></p>
+      </div>
+    </div>   
+    <div class="row text-center" style="padding-bottom: 80px">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h1 class="font-col-light" style="font-size: 200%">Raised On The Beaches Of The Mediterranean</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container font" style="margin-bottom: 50px">  
+    <div class="row">  
+      <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+        <p><span class="glyphicon glyphicon-user" style="font-size: 1000%; color: #484848"></span></p><br>
+        <h1 id="head" style="color: #484848"></h1><br>
+        <h1 style="color: #484848">
+          Ambitious Junior engineer with experience in the fields of software engineering, computer networks and cyber security  
+        </h1><br><br>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+        <p><span class="glyphicon glyphicon-briefcase font-col-light" style="font-size: 1000%; color: #484848"></span></p><br> 
+        <h1 id="head" class="font-col-light"></h1><br>
+        <h1 style="color: #484848" class="font-col-light">Goal Oriented individual Seeking a full time position as a Full Stack Engineer</h1><br><br>        
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+        <p><span class="glyphicon glyphicon-education font-col-light" style="font-size: 1000%; color: #484848"></span></p><br><br>
+        <h1 id="head" class="font-col-light"></h1><br>
+        <h1 style="color: #484848" class="font-col-light">Hard working, motivated and enthusiastic about technology and eager to learn and progress.</h1>        
+      </div>      
+    </div>
+  </div>    
+</div>
+
   <div class="cov divshow2" style="background-image: url(<%= asset_path 'between-cover.jpeg' %>); position: absolute; top: 5100px; width: 100%; min-height: 100vw; background-size:cover; background-repeat: no-repeat; right: 0; zoom: 30%; left:0; display: none; z-index: 0">
   </div>  
 <div class="cov divshow" style="background-image: url(<%= asset_path 'cover1.jpeg' %>); position: fixed; width: 100%; min-height: 100vw; background-size:cover; background-repeat: no-repeat; zoom: 60%; right: 0; left:0; display: none">
 </div>
-<div style="position: absolute; top: 280%; padding-top: 50px; background-image: url(<%= asset_path 'port-cover2.jpg' %>); width: 100%; min-height: 100vw; background-size:cover; background-repeat: no-repeat; right: 0; left:0; width: 100%; min-height: 80vw; background-size: cover"> 
+<div class="hidden-xs hidden-sm" style="position: absolute; top: 270%; padding-top: 50px; background-image: url(<%= asset_path 'port-cover2.jpg' %>); width: 100%; min-height: 100vw; background-size:cover; background-repeat: no-repeat; right: 0; left:0; width: 100%; min-height: 80vw; background-size: cover"> 
   <div class="container" id="portfolio">
     <div class="row" style="padding-top: 100px">
       <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
@@ -89,7 +122,46 @@
       </div>
     </div>              
   </div>          
-</div>        
+</div>
+
+<div class="hidden-md hidden-lg" style="position: absolute; top: 240%; padding-top: 50px; background-image: url(<%= asset_path 'port-cover2.jpg' %>); width: 100%; min-height: 100vw; background-size:cover; background-repeat: no-repeat; right: 0; left:0; width: 100%; min-height: 80vw; background-size: cover"> 
+  <div class="container" id="portfolio">
+    <div class="row" style="padding-top: 100px">
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal1">
+          <p class="title">Sports Meet-App</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("sports2.jpeg", class: "img-responsive", style: "height: 375px;") %>
+        </div>
+      </div>   
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal2">
+          <p class="title">SocialNet</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("social.png", class: "img-responsive", style: "height: 375px") %> 
+        </div>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal3">
+          <p class="title">CarList</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("car.jpeg", class: "img-responsive", style: "height: 375px") %> 
+        </div> 
+      </div>             
+      <div class="col-md-6 col-xs-12 col-sm-12 text-center nopadding">
+        <div data-toggle="modal" data-target="#mymodal4">
+          <p class="title">D.M.Viz</p>
+          <h3 class="title2">Click the banner for more details<h3>
+            <%= image_tag("dmv2.jpeg", class: "img-responsive", style: "height: 375px") %> 
+        </div>
+      </div>
+    </div>              
+  </div>          
+</div>
+
+
 <div style="position: absolute; top: 520%; background-color: white; background-image: url(<%= asset_path 'skills.jpeg' %>); width: 100%; min-height: 70vw; background-size: contain; background-repeat: no-repeat;"> 
   <div class="container">
     <div class="row">
@@ -97,13 +169,13 @@
       <div class="col-md-12" align="center">
         <span class="hr3" style="margin-bottom: 100px"></span>
       </div>  
-      <div class="col-md-12 text-center panel panel-default pan" style="background-color: #EBECE4">        
-        <div class="row">  
-          <div class="col-md-2 col-sm-4 col-xs-6">
+      <div class="col-md-12 col-xs-12 col-sm-12 hidden-xs text-center panel panel-default pan nopadding" style="background-color: #EBECE4">        
+        <div class="row nopadding">  
+          <div class="col-md-2 col-sm-4 col-xs-4">
             <%= image_tag("ruby-icon.png", size: "60x60") %>
             <h3 class="icon">Ruby</h3>
           </div>
-          <div class="col-md-2 col-sm-4 col-xs-6">
+          <div class="col-md-2 col-sm-4 col-xs-4">
             <%= image_tag("github-icon.png", size: "60x60") %>
             <h3 class="icon">Git</h3>
           </div>
@@ -140,11 +212,49 @@
             <h3 class="icon">AWS</h3>
           </div>                 
         </div>    
-      </div>
+      </div>       
+      <div class="row nopadding hidden-md hidden-sm hidden-lg panel pan" style="background-color: #EBECE4">  
+        <div class="col-xs-4">
+          <%= image_tag("ruby-icon.png", size: "60x60") %>
+          <h3 class="icon">Ruby</h3>
+        </div>
+        <div class="col-xs-4">
+          <%= image_tag("github-icon.png", size: "60x60") %>
+          <h3 class="icon">Git</h3>
+        </div>
+        <div class="col-xs-4">
+          <%= image_tag("HTML5-icon.png", size: "60x60") %>
+          <h3 class="icon">HTML5</h3>
+        </div>         
+        <div class="col-xs-4">
+          <%= image_tag("SQL-icon.png", size: "60x60") %>
+          <h3 class="icon">SQL</h3>
+        </div>
+        <div class="col-xs-4">
+          <%= image_tag("rubyonrails-icon.png", size: "60x60") %>
+          <h3 class="icon">Ruby on Rails</h3>
+        </div>        
+        <div class="col-xs-4">
+          <%= image_tag("css3-icon.jpeg", size: "60x60") %>
+          <h3 class="icon">CSS3</h3>
+        </div>   
+        <div class="col-xs-4">
+          <%= image_tag("javascript-icon.png", size: "60x60") %>
+          <h3 class="icon">JavaScript</h3>
+        </div>
+        <div class="col-xs-4">
+          <%= image_tag("heroku-icon.jpg", size: "60x60") %>
+          <h3 class="icon">Heroku</h3>
+        </div>
+        <div class="col-xs-4">
+          <%= image_tag("aws-icon.png", size: "70x60") %>
+          <h3 class="icon">AWS</h3>
+        </div>                 
+      </div>     
     </div>
   </div>
 </div> 
-<div style="padding-bottom: 70px; background-color: #4d4d4d; position: absolute; top: 640%; right:0; left:0; background-color: white"> 
+<div class="hidden-xs hidden-sm" style="padding-bottom: 70px; background-color: #4d4d4d; position: absolute; top: 620%; right:0; left:0; background-color: white"> 
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center" style="margin-bottom: 20px">
@@ -158,6 +268,21 @@
     </div>
   </div>
 </div>  
+
+<div class="hidden-md hidden-lg" style="padding-bottom: 70px; background-color: #4d4d4d; position: absolute; top: 625%; right:0; left:0; background-color: white"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center" style="margin-bottom: 20px">
+        <h1 style="font-size: 400%; font-weight: bold; margin-top: 30px; color: black" id="contact">Contact</h1>
+        <p align="center"><span class="hr4"></span></p>
+        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Email Me At:</h1><br>
+        <a href="mailto:finegoz@gmail.com"><h1 style="font-size: 300%; font-weight: bold; color: black">Finegoz@gmail.com</h1><br></a>
+        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Send Me a Message on LinkedIn:</h1><br>
+        <a href="https://www.linkedin.com/in/yogev-finegoz-b0071095/"><h1 style="font-size: 300%; font-weight: bold; color: black">LinkedIn - Yogev Finegoz</h1></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="modal font2" id="mymodal1">
   <div class="modal-dialog modal-lg" role="document">
