@@ -1,3 +1,17 @@
+    
+<script type="text/javascript" charset="utf-8">      
+window.onload = function(){
+  var buttons = document.getElementById('cube-buttons').getElementsByTagName('button');
+  for (var i = 0, l = buttons.length; i < l; i++){
+    buttons[i].onclick = function(){
+      document.getElementById('demo-cube').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
+    };
+  }
+};      
+</script>
+
+
+
 
 <div class="modal font2" id="mymodal1">
   <div class="modal-dialog modal-lg" role="document">
@@ -157,7 +171,7 @@
         </div>
       </div>  
     </div>  
-    <div class="row hidden-xs" style="margin-bottom: 60px; margin-top: 60px">
+    <div class="row hidden-xs" style="margin-bottom: 60px; margin-top: 60px; z-index: 10000">
       <div class="col-md-6 col-xs-12 col-sm-12 text-center" style="padding-top:30px">
         <a href="<%= pages_about_path %>"><%= image_tag("arrow_left.png", size: "400x80") %></a>
       </div> 
@@ -165,7 +179,7 @@
         <a href="<%= pages_skills_path %>"><%= image_tag("arrow_right.png", size: "400x80") %></a>
       </div>
     </div>  
-    <div class="row hidden-md hidden-lg hidden-sm" style="margin-bottom: 60px; margin-top: 50px">
+    <div class="row hidden-md hidden-lg hidden-sm" style="margin-bottom: 60px; margin-top: 50px; z-index: 10000">
       <div class="col-md-6 col-xs-12 col-sm-12 text-center" style="padding-top:0px">
         <a href="<%= pages_about_path %>"><%= image_tag("arrow_left.png", size: "300x80") %></a>
       </div> 
@@ -176,52 +190,41 @@
   </div>          
 </div>
 
-    <link rel="stylesheet" href="cube5.css" type="text/css" media="screen" title="Cube5" charset="utf-8" />
-    <style type="text/css" media="screen">            
-      
-      /* Only used for this demo */
-      body {
-        padding: 0 50px;
-        font-family: "Georgia", Verdana;
-      }
-      
-      #demo-cube {
-        margin: auto;
-      }
-      
-      #demo-cuboid {
-        margin: auto;
-        height: 430px;
-      }
-      
-      #demo-cube .face {
-        background-color: rgba(0,0,0,0.05);
-        -webkit-backface-visibility: visible;
-      }
-            
-      #demo-cube .face, #demo-cuboid .face {
-        vertical-align: middle;
-        text-align: center;
-        font-family: "Lucida Grande";
-        font-size: 13px;
-        text-shadow: 0 1px 0 #fff;
-      }
-      
-      #demo-settings .face {        
-        background-color: rgba(0,0,0,0.1);
-      }
-    </style>
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js" type="text/javascript" charset="utf-8"></script>    
-    <script type="text/javascript" charset="utf-8">      
-      window.onload = function(){
-        var buttons = document.getElementById('cube-buttons').getElementsByTagName('button');
-        for (var i = 0, l = buttons.length; i < l; i++){
-          buttons[i].onclick = function(){
-            document.getElementById('demo-cube').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
-          };
-        }
-      };      
-    </script>
+<link rel="stylesheet" href="cube5.css" type="text/css" media="screen" title="Cube5" charset="utf-8" />
+<style type="text/css" media="screen">            
+
+/* Only used for this demo */
+body {
+  padding: 0 50px;
+  font-family: "Georgia", Verdana;
+}
+
+#demo-cube {
+  margin: auto;
+}
+
+#demo-cuboid {
+  margin: auto;
+  height: 430px;
+}
+
+#demo-cube .face {
+  background-color: rgba(0,0,0,0.05);
+  -webkit-backface-visibility: visible;
+}
+
+#demo-cube .face, #demo-cuboid .face {
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Lucida Grande";
+  font-size: 13px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#demo-settings .face {        
+  background-color: rgba(0,0,0,0.1);
+}
+</style>
+
 
 
