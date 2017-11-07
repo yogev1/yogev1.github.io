@@ -19,8 +19,3 @@
 setInterval(function() {
     http.get("http://yogevfine.herokuapp.com");
 }, 50000); 
-
-
-
-
-

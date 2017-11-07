@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/pages/portfolio', to: 'pages#portfolio'
   get '/pages/skills', to: 'pages#skills'
   get '/pages/contact', to: 'pages#contact'
+  get '/pages/try', to: 'pages#try'
 end
