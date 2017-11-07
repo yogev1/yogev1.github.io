@@ -20,7 +20,7 @@
 }
 
 .font-col-light {
-  color: #EEF3E2;
+  color: black;
 }
 
 #head {
@@ -124,7 +124,7 @@ overflow:hidden;
     border: 0;
     width: 70px;
     align: center;
-    border-top: 5px solid #EEF3E2;
+    border-top: 5px solid black;
     margin: 1em 0;
     padding: 5px;
     opacity: 0.7;
@@ -235,27 +235,10 @@ footer{
   bottom: 0;
   right: 0;
   left: 0;
-  padding-top: 50px; 
-  padding-bottom: 100px; 
+  padding-top: 15px; 
+  padding-bottom: 15px; 
 }
-.footerHeader{
-    width:100%;
-    padding:1em;
-    background-color: #202020;
-    text-align:center;
-    color:white;
-}
-footer h3{
-    font-weight:lighter;
-}
-footer ul{
-    padding-left: 5px;
-    list-style: none;
-}
-footer p{
-    text-align : justify;
-    font-size : 12px;
-}
+
 .sm{
     list-style:none;
     overflow:auto;
@@ -299,15 +282,15 @@ footer p{
 
 .btn-outlined.btn-theme {
     background: none;
-    color: white;
-  border-color: white;
+    color: black;
+  border-color: black;
 }
 
 .btn-outlined.btn-theme:hover,
 .btn-outlined.btn-theme:active {
-    color: black;
-    background: white;
-    border-color: white;
+    color: white;
+    background: black;
+    border-color: black;
 }
 
 .btn-outlined.btn-black {
@@ -417,7 +400,7 @@ label {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(darken(#3498db,30%),.6);
+    background-color: rgba(darken(black,30%),.7);
     content: '';
     opacity: 0;
     pointer-events: none;
@@ -426,7 +409,7 @@ label {
   .burger {
     position: fixed;
     top: 5em;
-    left: 5em;
+    right: 5em;
     z-index: 3;
     width: 3em;
     height: 3em;
@@ -441,7 +424,8 @@ label {
       display: block;
       width: 100%;
       height: 12%;
-      background: white;
+      background: black;
+      border: 1px solid white;
       content: '';
       transition: all .5s $timing-function;
     }
@@ -487,7 +471,6 @@ nav {
     left: 0; 
     z-index: -1;
     width: $nav-width-mobile;
-    background: #264d00;
     opacity: 0.6;
     content: '';
     transform: skewX(15deg) translateX(-100%);
@@ -512,12 +495,13 @@ nav {
       &:nth-child(#{$i}) { transition-delay: 0s, #{50 + (50 * $i)}ms; } 
     }
     &:hover, &:focus {
-      color: black;
+      color: white;
     }
   }
 }
 
-
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
 
 [id="navcheck"]:checked {
   & + label {
@@ -556,6 +540,14 @@ nav {
     -webkit-filter: blur(2px);
             filter: blur(2px); /* quite laggy :S */
   }
+}
+
+
+.one{
+  background-image: -webkit-linear-gradient(110deg, #E8E8E8 65%, white 35%);
+}
+.two{
+  background-image: -webkit-linear-gradient(70deg, #E8E8E8 65%, white 35%);
 }
 
 

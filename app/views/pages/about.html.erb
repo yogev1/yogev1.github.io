@@ -1,0 +1,161 @@
+
+<div class="container hidden-xs hidden-sm" style="padding-top: 20px"> 
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="padding-bottom: 40px">
+      <h1 style="font-size: 600%; font-weight: bold;" id="about">About</h1>
+      <p align="center"><span class="hr3"></span></p>
+    </div>
+  </div>   
+  <div class="row">
+    <div class="col-md-9 col-md-push-1">
+      <h1 style="font-size: 400%">Raised On The Beaches Of The Mediterranean</h1>
+    </div>
+    <div class="col-md-3 col-md-push-1" style="margin-top: -30px">   
+      <%= image_tag("palm_tree.png", size: "100x100") %>     
+    </div>
+  </div>
+</div>
+<div class="container font hidden-xs hidden-sm" style="margin-bottom: 50px; margin-top: 50px; color:#F0FFFF">
+  <div class="row">  
+    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+      <p><span class="glyphicon glyphicon-user font-col-light" style="font-size: 1000%"></span></p><br><br>
+      <h1 id="head" class="font-col-light"></h1><br>
+      <h1 class="font-col-light element">  
+      </h1>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+      <p><span class="glyphicon glyphicon-briefcase font-col-light" style="font-size: 1000%"></span></p><br><br> 
+      <h1 id="head" class="font-col-light"></h1><br>
+      <h1 class="font-col-light element2"></h1>        
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+      <p><span class="glyphicon glyphicon-education font-col-light" style="font-size: 1000%"></span></p><br><br>
+      <h1 id="head" class="font-col-light"></h1><br>
+      <h1 class="font-col-light element3"></h1>        
+    </div>      
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12 col-sm-12 text-center">
+      <a href="<%= root_path %>"><%= image_tag("arrow_left.png", size: "400x80") %></a>
+      <a href="<%= pages_portfolio_path %>"><%= image_tag("arrow_right.png", size: "400x80") %></a>
+    </div>
+  </div>   
+</div>    
+
+
+<div class="hidden-md hidden-lg" style="position: absolute; right: 0; left: 0; padding-bottom: 50px; padding-top: 20px">
+  <div class="container"> 
+    <div class="row" id="othdiv">
+      <div class="col-sm-10 col-xs-12 text-center" style="margin-top: 50px; padding-bottom: 40px">
+        <h1 style="font-size: 300%; font-weight: bold;" id="about" class="font-col-light">About</h1>
+        <p align="center"><span class="hr3"></span></p>
+      </div>
+    </div>   
+    <div class="row hidden-xs" style="padding-bottom: 80px">
+      <div class="col-sm-8 col-xs-12">
+        <h1 class="font-col-light" style="font-size: 300%">Raised On The Beaches Of The Mediterranean</h1>
+      </div>  
+      <div class="col-sm-2 col-xs-12" style="margin-top: -30px">   
+        <%= image_tag("palm_tree.png", size: "100x100") %>     
+      </div>        
+    </div>
+    <div class="row hidden-sm" style="padding-bottom: 80px">
+      <div class="col-xs-12 text-center">
+        <h1 class="font-col-light" style="font-size: 300%">Raised On The Beaches Of The Mediterranean</h1>
+      </div>  
+      <div class="col-xs-12 text-center" style="margin-top: 30px">   
+        <%= image_tag("palm_tree.png", size: "100x100") %>     
+      </div>        
+    </div>
+  </div>
+  <div class="container font" style="margin-bottom: 50px">  
+    <div class="row">  
+      <div class="col-sm-12 col-xs-12 text-center">
+        <p><span class="glyphicon glyphicon-user" style="font-size: 1000%; color: #484848"></span></p><br>
+        <h1 id="head" style="color: #484848"></h1><br>
+          <h1 class="font-col-light element4">  
+          </h1><br><br>
+      </div>
+      <div class="col-sm-12 col-xs-12 text-center">
+        <p><span class="glyphicon glyphicon-briefcase font-col-light" style="font-size: 1000%; color: #484848"></span></p><br> 
+        <h1 id="head" class="font-col-light"></h1><br>
+        <h1 style="color: #484848" class="font-col-light element5">
+          </h1><br><br>        
+      </div>
+      <div class="col-sm-12 col-xs-12 text-center">
+        <p><span class="glyphicon glyphicon-education font-col-light" style="font-size: 1000%; color: #484848"></span></p><br><br>
+        <h1 id="head" class="font-col-light"></h1><br>
+        <h1 style="color: #484848" class="font-col-light element6">  
+          </h1>        
+      </div>      
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12 text-center">
+        <a href="<%= root_path %>"><%= image_tag("arrow_left.png", size: "300x80") %></a>
+        <a href="<%= pages_portfolio_path %>"><%= image_tag("arrow_right.png", size: "300x80") %></a>
+      </div>
+    </div>  
+  </div>    
+</div> 
+
+<script>
+$(document).ready(function() {
+    var typed = new Typed(".element", {
+      strings: ["Ambitious Junior engineer with experience in the fields of software engineering, computer networks and cyber security."],
+      fadeOut: true,
+      typeSpeed: 40,
+      startDelay: 0,
+      smartBackspace: true
+    });
+});
+
+$(document).ready(function() {
+    var typed = new Typed(".element2", {
+      strings: ["Goal Oriented individual Seeking a full time position as a Full Stack Engineer."],
+      fadeOut: true,
+      typeSpeed: 40,
+      startDelay: 7500,
+      smartBackspace: true
+    });
+});
+
+$(document).ready(function() {
+    var typed = new Typed(".element3", {
+      strings: ["Hard working, motivated and enthusiastic about technology and eager to learn and progress."],
+      fadeOut: true,
+      typeSpeed: 40,
+      startDelay: 12500,
+      smartBackspace: true
+    });
+});
+
+$(document).ready(function() {
+    var typed = new Typed(".element4", {
+      strings: ["Ambitious Junior engineer with experience in the fields of software engineering, computer networks and cyber security."],
+      fadeOut: true,
+      typeSpeed: 40,
+      startDelay: 0,
+      smartBackspace: true
+    });
+});
+
+$(document).ready(function() {
+    var typed = new Typed(".element5", {
+      strings: ["Goal Oriented individual Seeking a full time position as a Full Stack Engineer."],
+      fadeOut: true,
+      typeSpeed: 40,
+      startDelay: 7500,
+      smartBackspace: true
+    });
+});
+
+$(document).ready(function() {
+    var typed = new Typed(".element6", {
+      strings: ["Hard working, motivated and enthusiastic about technology and eager to learn and progress."],
+      fadeOut: true,
+      typeSpeed: 40,
+      startDelay: 12500,
+      smartBackspace: true
+    });
+});  
+</script>

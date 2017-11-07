@@ -21,37 +21,6 @@ setInterval(function() {
 }, 50000); 
 
 
-<!-- fade in/out -->
-
-
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 700) {
-    $('.divhide').hide();
-  } else {
-    $('.divhide').show();
-  }
-});
-
-
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 700 && y < 1900) {
-    $('.divshow2').show();
-  } else {
-    $('.divshow2').hide();
-  }
-});
-
-
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > 1900) {
-    $('.divshow').show();
-  } else {
-    $('.divshow').hide();
-  }
-});
 
 
 
