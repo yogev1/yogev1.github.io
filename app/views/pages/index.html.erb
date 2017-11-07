@@ -1,5 +1,5 @@
 
-<div class="cov" style="background-image: url(<%= asset_path 'photo.jpg' %>); position: fixed; width: 80%; height: 100vw; zoom: 55%; background-size:contain; background-repeat: no-repeat">
+<div class="cov hidden-xs hidden-sm" style="background-image: url(<%= asset_path 'photo.jpg' %>); position: fixed; width: 80%; height: 100vw; zoom: 55%; background-size:contain; background-repeat: no-repeat">
   <div class="container" style="padding-top: 20%"> 
     <div class="row divhide hidden-sm hidden-xs">
       <div class="col-md-6 col-sm-4 col-xs-4 text-center col-md-push-12">
@@ -15,9 +15,35 @@
   </div>     
 </div>
 
+<div class="cov hidden-md hidden-lg" style="background-image: url(<%= asset_path 'photo.jpg' %>); position: fixed; width: 100%; height: 80vw; background-size:cover; background-repeat: no-repeat">
+  <div class="container" style="padding-top: 90%"> 
+    <div class="row">
+      <div class="col-md-6 col-sm-4 col-xs-4 text-center col-md-push-12">
+        <a href="/pages/about"class="btn-outlined btn-theme btn-lg" data-wow-delay="0.7s" style="font-size:200%">About</a>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 20%">
+      <div class="col-md-12 col-sm-4 col-xs-4 text-center col-md-push-6">  
+        <div style="color: black; font-size: 300%" class="element-home2 col-md-6 col-sm-4 col-xs-4 text-center col-md-push-6"> 
+        </div>
+      </div>               
+    </div>   
+  </div>     
+</div>
+
 <script>
   $(document).ready(function() {
       var typed = new Typed(".element-home", {
+        strings: ["Hello, I'm Yogev Finegoz. I'm a Fullstack Engineer."],
+        fadeOut: true,
+        typeSpeed: 70,
+        startDelay: 0,
+        smartBackspace: true
+      });
+  });
+
+  $(document).ready(function() {
+      var typed = new Typed(".element-home2", {
         strings: ["Hello, I'm Yogev Finegoz. I'm a Fullstack Engineer."],
         fadeOut: true,
         typeSpeed: 70,
