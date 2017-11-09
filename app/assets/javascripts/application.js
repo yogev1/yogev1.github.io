@@ -18,19 +18,26 @@
 
 setInterval(function() {
     http.get("http://yogevfine.herokuapp.com");
-}, 50000); 
+}, 50000);
 
-$( document ).ready(function() {
-	window.onload = function(){
-	  var buttons = document.getElementById('cube-buttons').getElementsByTagName('button');
-	  for (var i = 0, l = buttons.length; i < l; i++){
-	    buttons[i].onclick = function(){
-	      document.getElementById('demo-cube').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
-	    };
-	  }
-	}; 
-});
 
+// about page text animation
+
+$(".drop").click(function() {  
+	$(".about").toggleClass("hinge");      
+}, 5000000); 
+
+
+// portfolio cube 
+
+window.onload = function(){
+  var buttons = document.getElementById('cube-buttons').getElementsByTagName('button');
+  for (var i = 0, l = buttons.length; i < l; i++){
+    buttons[i].onclick = function(){
+      document.getElementById('demo-cube').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
+    };
+  }
+};  
 
 
 // Skills SwatchBook
@@ -191,3 +198,18 @@ $( document ).ready(function() {
 		return instance;
 	};
 } )( jQuery, window );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

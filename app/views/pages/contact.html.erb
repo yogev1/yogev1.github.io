@@ -1,31 +1,48 @@
 <div class="hidden-xs hidden-sm" style="padding-bottom: 70px; background-color: #4d4d4d; position: absolute; right:0; left:0; background-color: white"> 
-  <div class="container">
+  <div class="container" style="background-color: #f2f2f2;">
     <div class="row">
-      <div class="col-md-12 text-center" style="margin-top:40px">
+      <div class="col-md-12 text-center" style="margin-top:20px">
         <h1 style="font-size: 400%; font-weight: bold; margin-top: 30px; color: black" id="contact" class="animated bounceInLeft">Contact</h1>
         <p align="center"><span class="hr4 animated flip"></span></p>
-        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Email Me At:</h1><br>
+      </div>
+      <div class="col-md-5 text-center" style="margin-top:20px">  
+        <h1 style="font-size: 250%; font-weight: bold">Email Me At:</h1><br>
         <a href="mailto:finegoz@gmail.com"><h1 style="font-size: 300%; font-weight: bold; color: black" class="animated rubber">Finegoz@gmail.com</h1><br></a>
-        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Send Me a Message on LinkedIn:</h1><br>
+      </div>
+      <div class="col-md-2 text-center" style="margin-top:30px"> 
+        <h1 style="font-size: 400%">OR</h1>
+      </div>  
+      <div class="col-md-5 text-center" style="margin-top:20px">  
+        <h1 style="font-size: 250%; font-weight: bold">Send Me a Message on LinkedIn:</h1><br>
         <a href="https://www.linkedin.com/in/yogev-finegoz-b0071095/"><h1 style="font-size: 300%; font-weight: bold; color: black" class="animated rubber">LinkedIn - Yogev Finegoz</h1></a>
       </div>
     </div>
-  </div>   
+    <%= render '/user_mailer/message_mail' %>
+  </div>     
 </div>
 
+
 <div class="hidden-md hidden-lg" style="padding-bottom: 70px; background-color: #4d4d4d; position: absolute; right:0; left:0; background-color: white"> 
-  <div class="container">
+  <div class="container" style="background-color: #f2f2f2;">
     <div class="row">
-      <div class="col-md-12 text-center" style="margin-bottom: 20px">
+      <div class="col-sm-12 col-xs-12 text-center" style="margin-top:20px">
         <h1 style="font-size: 400%; font-weight: bold; margin-top: 30px; color: black" id="contact" class="animated bounceInLeft">Contact</h1>
         <p align="center"><span class="hr4 animated flip"></span></p>
-        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Email Me At:</h1><br>
+      </div>
+      <div class="col-sm-5 col-xs-12 text-center" style="margin-top:20px">  
+        <h1 style="font-size: 250%; font-weight: bold">Email Me At:</h1><br>
         <a href="mailto:finegoz@gmail.com"><h1 style="font-size: 300%; font-weight: bold; color: black" class="animated rubber">Finegoz@gmail.com</h1><br></a>
-        <h1 style="font-size: 250%; font-weight: bold; color:#bfbfbf">Send Me a Message on LinkedIn:</h1><br>
+      </div>
+      <div class="col-sm-2 col-xs-12 text-center" style="margin-top:30px"> 
+        <h1 style="font-size: 400%">OR</h1>
+      </div>      
+      <div class="col-sm-5 col-xs-12 text-center" style="margin-top:20px">  
+        <h1 style="font-size: 250%; font-weight: bold">Send Me a Message on LinkedIn:</h1><br>
         <a href="https://www.linkedin.com/in/yogev-finegoz-b0071095/"><h1 style="font-size: 300%; font-weight: bold; color: black" class="animated rubber">LinkedIn - Yogev Finegoz</h1></a>
       </div>
     </div>
-  </div>
+    <%= render '/user_mailer/message_mail' %>
+  </div>     
 </div>
 
 <script>
@@ -33,4 +50,6 @@
     function(){ $(this).toggleClass('rubberBand') }
   ); 
 </script>
+
+
 

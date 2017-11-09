@@ -1,0 +1,33 @@
+<div class="container" style="padding-top: 20px">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <div class="panel" style="border-radius: 0px; min-height: 300px; border: none">
+        <div class="panel-heading text-center" style="background: #4D4D4D; border-radius: 0px">
+          <h2 style="color: white">Send Me A Message</h2>
+        </div>
+        <div class="panel-body">  
+          <%= bootstrap_form_for(Contact.new) do |f| %>
+            <div class="row">
+              <div class="col-md-6">
+                <%= f.text_field :name, placeholder: "Enter Email" %>
+              </div>
+              <div class="col-md-6">
+                <%= f.email_field :email, placeholder: "Enter Email" %>
+              </div>                
+            </div><br> 
+            <div class="row">
+              <div class="col-md-6"> 
+                <%= f.text_area :message, placeholder: "Enter Message Here" %>
+              </div>  
+            </div><br> 
+            <div class="row">
+              <div class="col-md-12">             
+                <%= f.submit "Send Message" %>
+              </div>  
+            </div>              
+          <% end %>  
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>      

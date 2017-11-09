@@ -1,17 +1,3 @@
-    
-<script type="text/javascript" charset="utf-8">      
-window.onload = function(){
-  var buttons = document.getElementById('cube-buttons').getElementsByTagName('button');
-  for (var i = 0, l = buttons.length; i < l; i++){
-    buttons[i].onclick = function(){
-      document.getElementById('demo-cube').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
-    };
-  }
-};      
-</script>
-
-
-
 
 <div class="modal font2" id="mymodal1">
   <div class="modal-dialog modal-lg" role="document">
@@ -23,7 +9,7 @@ window.onload = function(){
         <h5 style="font-weight: bold"><a href="#">App Platform Dependent Sharing App</a><br> 
         Inspired by a start up company from Santa Monica that provides a sports meeting service. IOS and Android users share a link with their friends for sports events and through my web app they are being transferred according to their device O.S using the Browser GEM to either a page that offers to download the compatible App online or in case of viewing through a computer, transferred to a web designed page that generates the shared event for more details. The app is currently deployed using Heroku. The app utilizes the HTTPParty GEM and header Authentication to extract user and event stored data from the company’s RESTful JSON API.</h5>
         <h5 style="font-weight: bold"><a href="http://wearecatchapp.herokuapp.com">Full Functionality Web App</a><br> 
-      Inspired by a start up company from Santa Monica. A full Rails 5 web app. The app includes several features like: Authentication using Devise gem, modifying user profiles, adding preferred sports activities, creating, commenting and liking events, full friendship mechanism and an ActiveAdmin to handle administrator control. The app uses AWS S3 bucket to store uploaded photos and is deployed using Heroku. The app utilizes geocoder and Gmaps4rails GEMs to present events on a map.</h5>
+        Inspired by a start up company from Santa Monica. A full Rails 5 web app. The app includes several features like: Authentication using Devise gem, modifying user profiles, adding preferred sports activities, creating, commenting and liking events, full friendship mechanism and an ActiveAdmin to handle administrator control. The app uses AWS S3 bucket to store uploaded photos and is deployed using Heroku. The app utilizes geocoder and Gmaps4rails GEMs to present events on a map.</h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-size: 150%; padding: 6px 50px">Close</button>
@@ -189,42 +175,6 @@ window.onload = function(){
     </div>                     
   </div>          
 </div>
-
-<link rel="stylesheet" href="cube5.css" type="text/css" media="screen" title="Cube5" charset="utf-8" />
-<style type="text/css" media="screen">            
-
-/* Only used for this demo */
-body {
-  padding: 0 50px;
-  font-family: "Georgia", Verdana;
-}
-
-#demo-cube {
-  margin: auto;
-}
-
-#demo-cuboid {
-  margin: auto;
-  height: 430px;
-}
-
-#demo-cube .face {
-  background-color: rgba(0,0,0,0.05);
-  -webkit-backface-visibility: visible;
-}
-
-#demo-cube .face, #demo-cuboid .face {
-  vertical-align: middle;
-  text-align: center;
-  font-family: "Lucida Grande";
-  font-size: 13px;
-  text-shadow: 0 1px 0 #fff;
-}
-
-#demo-settings .face {        
-  background-color: rgba(0,0,0,0.1);
-}
-</style>
 
 
 

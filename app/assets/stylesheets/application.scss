@@ -1,6 +1,8 @@
 
 @import "bootstrap";
-
+/*
+ *= require rails_bootstrap_forms
+ */
 
 /*
 *= require material_icons
@@ -368,24 +370,13 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
+/* for full screen navbar */
 
 $timing-function   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
 $nav-width-desktop : 40em;
 $nav-width-mobile  : 25em;
 $nav-item-nb       : 6;
 
-input {
-  position: fixed;
-  opacity: 0;
-}
 label {
   position: absolute;
   margin: 0;
@@ -625,20 +616,30 @@ nav {
   .cube.toCarList { -webkit-transform: rotateY(90deg); }
   .cube.toSports-Meet-App { -webkit-transform: rotateY(0); }
 }
+#demo-cube {
+  margin: auto;
+}
+
+#demo-cube .face {
+  background-color: rgba(0,0,0,0.05);
+  -webkit-backface-visibility: visible;
+}
+
+#demo-cube .face {
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Lucida Grande";
+  font-size: 13px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#demo-settings .face {        
+  background-color: rgba(0,0,0,0.1);
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*SwatchBook*/
 
 
 .sb-container {
@@ -869,6 +870,10 @@ span.sb-icon:before {
 .icon-mobile:before { content: '2'; } 
 .icon-camera:before { content: '1'; } 
 
-#rubber {}
+
+
+
+
+
 
 
