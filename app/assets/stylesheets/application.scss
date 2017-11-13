@@ -560,6 +560,7 @@ nav {
   height: 350px;
 }
 
+
 .cube {
   -webkit-transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 1s;
@@ -876,7 +877,75 @@ span.sb-icon:before {
 
 
 
+/* page cube */
 
+.cube-container2 {
+  -webkit-perspective: 100000;
+  position: relative;
+  /* default size. if you change the width make sure to adjust the translateZ values */
+  width: 70vw; 
+  height: 70vw;
+}
+
+.cube2 {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  width: 70vw;
+  height: 70vw;
+}
+
+.cube2 .face {
+  width: 70vw;
+  height: 70vw;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-shadow: 0 0 5px #74A3D7;
+  -moz-box-shadow: 0 0 5px #74A3D7;
+}
+
+.cube2 .face.front {
+  -webkit-transform: scale3d(1, 1, 1) translateZ(50vw);
+}
+
+.cube2 .face.left {
+  -webkit-transform: scale3d(1, 1, 1) rotateY(-90deg) translateZ(50vw);
+}
+
+.cube2 .face.right {
+  -webkit-transform: scale3d(1, 1, 1) rotateY(90deg) translateZ(50vw);
+}
+
+.cube2 .face.rear {
+  -webkit-transform: scale3d(1, 1, 1) rotateY(180deg) translateZ(50vw);
+}
+
+.cube2 .face.bottom {
+  -webkit-transform: scale3d(1, 1, 1) rotateX(-90deg) translateZ(50vw) rotate(180deg);
+}
+
+.cube2 .face.top {
+  -webkit-transform: scale3d(1, 1, 1) rotateX(90deg) translateZ(50vw);
+}
+
+.cube2 .face { display: none; }
+.cube2.toTop .face.top { display: block; }
+.cube2.toBottom .face.bottom { display: block; }
+.cube2.toRear .face.rear { display: block; }
+.cube2.toRight .face.right { display: block; }
+.cube2.toLeft .face.left { display: block; }
+.cube2.toFront .face.front { display: block; }
+
+@media all and (-webkit-transform-3d) {
+  .cube2 .face { display: block; } 
+  .cube2.toTop { -webkit-transform: rotateX(-90deg); }      
+  .cube2.toSocialNet { -webkit-transform: rotateX(-90deg) rotate(180deg); }
+  .cube2.toRear { -webkit-transform: rotateY(180deg); }
+  .cube2.toDMViz { -webkit-transform: rotateY(-90deg); }
+  .cube2.toCarList { -webkit-transform: rotateY(90deg); }
+  .cube2.toSports-Meet-App { -webkit-transform: rotateY(0); }
+}
 
 
 

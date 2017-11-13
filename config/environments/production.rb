@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { :host => 'https://yogevfine.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'https://yogev-fine.com' }
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
     :user_name => 'app78828839@heroku.com',
