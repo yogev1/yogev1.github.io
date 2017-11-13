@@ -26,6 +26,7 @@ gem 'bootstrap', '~> 4.0.0.beta'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'material_icons'
 gem 'mail_form'
+gem "letter_opener", :group => :development
 gem 'bootstrap_form'
 # Use Unicorn as the app server
 # gem 'unicorn'

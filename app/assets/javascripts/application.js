@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
 //= require_tree 
 
 
@@ -39,6 +39,26 @@ window.onload = function(){
   }
 };  
 
+// index typed
+  document.addEventListener("DOMContentLoaded", function(event) {
+      var typed = new Typed(".element-home", {
+        strings: ["Hello, I'm Yogev Finegoz. I'm a Fullstack Engineer."],
+        fadeOut: true,
+        typeSpeed: 70,
+        startDelay: 0,
+        smartBackspace: true
+      });
+  });
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+      var typed = new Typed(".element-home2", {
+        strings: ["Hello, I'm Yogev Finegoz. I'm a Fullstack Engineer."],
+        fadeOut: true,
+        typeSpeed: 70,
+        startDelay: 0,
+        smartBackspace: true
+      });
+  });
 
 // Skills SwatchBook
 
