@@ -7,10 +7,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     @contact.request = request
     if @contact.deliver
-      flash.now[:notice] = 'Thank you for your message. I will contact you soon!' 
+      flash[:notice] = 'Thank you for your message. I will contact you soon!' 
       redirect_to pages_contact_path 
     else
-      flash.now[:error] = 'Cannot send message.' 
+      flash[:error] = 'Cannot send message.' 
       redirect_to pages_contact_path 
       render :new
     end
