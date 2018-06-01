@@ -42,7 +42,7 @@ window.onload = function(){
 // index typed
   document.addEventListener("DOMContentLoaded", function(event) {
       var typed = new Typed(".element-home", {
-        strings: ["Hello, I'm Yogev Finegoz. I'm a Fullstack Engineer."],
+        strings: ["Hello, I'm Yogev Finegoz."],
         fadeOut: true,
         typeSpeed: 70,
         startDelay: 0,
@@ -52,7 +52,7 @@ window.onload = function(){
 
   document.addEventListener("DOMContentLoaded", function(event) {
       var typed = new Typed(".element-home2", {
-        strings: ["Hello, I'm Yogev Finegoz. I'm a Fullstack Engineer."],
+        strings: ["Hello, I'm Yogev Finegoz."],
         fadeOut: true,
         typeSpeed: 70,
         startDelay: 0,
